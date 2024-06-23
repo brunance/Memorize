@@ -12,7 +12,7 @@ struct ContentView: View {
     @State var cardCount = 4
     var body: some View {
         VStack {
-            ScrollView{
+            ScrollView {
                 cards
             }
             Spacer()
@@ -20,7 +20,7 @@ struct ContentView: View {
         }
         .padding()
     }
-    
+
     var cardCountAdjusters: some View {
         HStack {
             cardRemover
@@ -30,7 +30,7 @@ struct ContentView: View {
         .imageScale(.large)
         .font(.largeTitle)
     }
-    
+
     var cards: some View {
         LazyVGrid(columns: [GridItem(.adaptive(minimum: 120))]) {
             ForEach(0..<cardCount, id: \.self) { index in
@@ -40,7 +40,7 @@ struct ContentView: View {
         }
         .foregroundStyle(.orange)
     }
-    
+
     func cardCountAdjuster(by offset: Int, symbol: String) -> some View {
         Button(action: {
             cardCount += offset
@@ -49,11 +49,11 @@ struct ContentView: View {
         })
         .disabled(cardCount + offset < 1 || cardCount + offset > emojis.count)
     }
-    
+
     var cardRemover: some View {
         cardCountAdjuster(by: -1, symbol: "rectangle.stack.badge.minus.fill")
     }
-    
+
     var cardAdder: some View {
         cardCountAdjuster(by: +1, symbol: "rectangle.stack.badge.plus.fill")
     }
@@ -63,7 +63,7 @@ struct CardView: View {
     let content: String
     @State /* temporário, mudar depois */ var isFaceUp: Bool = true
     let cardBase = RoundedRectangle(cornerRadius: 12)
-    
+
     var body: some View {
         ZStack {
             Group {
