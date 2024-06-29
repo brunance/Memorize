@@ -12,6 +12,8 @@
 		4F72CAFA2C1F7F3A009CC2F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F72CAF92C1F7F3A009CC2F2 /* ContentView.swift */; };
 		4F72CAFC2C1F7F3B009CC2F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F72CAFB2C1F7F3B009CC2F2 /* Assets.xcassets */; };
 		4F72CB002C1F7F3B009CC2F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F72CAFF2C1F7F3B009CC2F2 /* Preview Assets.xcassets */; };
+		4FF25FE62C309CF900CCB37D /* MemorizeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF25FE52C309CF900CCB37D /* MemorizeModel.swift */; };
+		4FF25FE82C309F2800CCB37D /* MemorizeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF25FE72C309F2800CCB37D /* MemorizeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		4F72CAFB2C1F7F3B009CC2F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F72CAFD2C1F7F3B009CC2F2 /* Memorize.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Memorize.entitlements; sourceTree = "<group>"; };
 		4F72CAFF2C1F7F3B009CC2F2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4FF25FE52C309CF900CCB37D /* MemorizeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeModel.swift; sourceTree = "<group>"; };
+		4FF25FE72C309F2800CCB37D /* MemorizeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeViewModel.swift; sourceTree = "<group>"; };
 		7335ACDE749D89D4CBF7A09A /* libPods-Memorize.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Memorize.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C152FA5FBD33C64E7272DA84 /* Pods-Memorize.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memorize.debug.xcconfig"; path = "Target Support Files/Pods-Memorize/Pods-Memorize.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,6 +63,8 @@
 		4F72CAF62C1F7F3A009CC2F2 /* Memorize */ = {
 			isa = PBXGroup;
 			children = (
+				4FF25FE52C309CF900CCB37D /* MemorizeModel.swift */,
+				4FF25FE72C309F2800CCB37D /* MemorizeViewModel.swift */,
 				4F72CAF72C1F7F3A009CC2F2 /* MemorizeApp.swift */,
 				4F72CAF92C1F7F3A009CC2F2 /* ContentView.swift */,
 				4F72CAFB2C1F7F3B009CC2F2 /* Assets.xcassets */,
@@ -209,6 +215,8 @@
 			files = (
 				4F72CAFA2C1F7F3A009CC2F2 /* ContentView.swift in Sources */,
 				4F72CAF82C1F7F3A009CC2F2 /* MemorizeApp.swift in Sources */,
+				4FF25FE82C309F2800CCB37D /* MemorizeViewModel.swift in Sources */,
+				4FF25FE62C309CF900CCB37D /* MemorizeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
